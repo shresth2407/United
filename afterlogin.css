@@ -1,0 +1,499 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(43, 41, 41);
+    
+}
+
+label.logo{
+    font-size: 25px;
+    color: #FEA116;
+    margin: 0 100px;
+    line-height:60px ;
+}
+
+nav ul {
+    float: right;   /* sare list right ke taraf a jae ge */
+    list-style-type: none; /* list ke time jo dought ate h usko hta deta h*/
+    justify-content: space-evenly;
+}
+
+nav ul li{
+    display: inline-block; /* sare elemnet ek line pe a  jae ge*/
+    line-height: 60px;  /* de de ne se sb  center pe a jae ga */
+}
+
+nav ul li a {
+    text-decoration: none; /* remove  underline*/
+    color: #FEA116;
+    font-size: 20px;
+    text-transform: capitalize; /* capitalater me krne ke liye first word*/
+    padding: 8px 20px; /*sare elemnet me space dene ke liye eqaliy*/
+    
+}
+
+.active{
+    font-size: 15px;
+}
+.active:hover{
+    color: rgb(255, 255, 255); 
+
+}
+/*check box*/
+#checkbtn{
+    float: right; /* sare list right ke taraf a jae ge */
+    line-height: 60px;
+    margin-right: 10px;
+    font-size: 23px;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+/* check box ke check kren pe jo bhi ul h left se 0 ho jae ga mtlb ki check pe click krne se vo vapsa apne posyion pe a jae ga  */
+
+#check:checked ~ ul {
+    left: 0;
+
+}
+
+/* for making background image responsive*/
+
+
+
+
+
+/* for making logo responsive*/
+
+@media(max-width: 347px){
+    label.logo{
+        font-size: 20px;
+        margin: 0px 50px;
+    }
+}
+
+/* for making responsive*/
+
+@media(max-width:916px){
+
+    label.logo{
+        margin: 0px 60px;
+    }
+    
+    #checkbtn{
+        display: block; /*yaha pe hm maximum de diye h ki itne pe ane ke baad hmara jo check box h vo show hone lge 916px ke baad*/
+
+    }
+    nav ul{
+        width: 100%;
+        height: 100vh; /* vh ka mtlb jitna hmko dikha raha h screen pura cover kre ga vo */
+        background: rgb(233, 213, 175);
+        position: fixed;
+        top: 60px;
+        left: -100%;  /* pura gyab ho jae ga jb hm check pe click kre  ge to  a jae ga*/
+        transition: .5s; /* slid krta huva side se aega*/
+
+        
+    }
+    nav ul li{
+        display: block; /*sare elemen t ko ek ke upar ek kr deta h */
+        text-align: center; /* sare elemnet ko center pe la deta h*/
+        line-height: 35px;
+        margin: 10px;
+
+    }    
+
+}
+
+/* <!---- for image --> */
+.a{
+    width: 100%;
+    height: 1100px;
+    background-image: url(1.png);
+    background-size: cover;
+}
+
+@media(max-width:1193px){
+    .a{
+        background-size: 700px;
+        width: 100%;
+       height: 700px;
+       background-size: cover;
+    }
+}
+
+.i{
+    color: white;
+    padding-top:220px ;
+    font-size:80px ;
+    padding-left: 140px;
+}
+.ii{
+    color: white;
+    padding-left: 140px;
+    font-size: 80px;
+}
+
+
+
+/* fount ko responsive*/
+
+@media(max-width:840px){
+    .i{
+        font-size: 40px;
+        text-align: center;
+        padding-right: 66px;
+        padding-top: 70px;
+        padding-left: 76px;
+    }
+}
+
+@media(max-width:840px){
+    .ii{
+        font-size: 40px;
+        text-align: center;
+        padding-right: 66px;
+        padding-left: 76px;
+    }
+}
+
+/* @media(max-width: 840px){
+    .pp{
+        text-align: center;
+        padding-left: 70px;
+        color: blue;
+    }
+} */
+
+ /* for button */
+.let{    
+    margin-left: 20%;
+    color: #757474;
+    margin-top: 300px;
+    cursor: pointer;
+    font-size: 20px;
+   width: 120px;
+   height: 40px;
+}
+
+/* responsive  button  */
+@media(max-width:952px){
+    .let{
+        text-align: center;
+        margin-top: 100px;
+      
+    }
+}
+
+/* for new panel  */
+
+.detail{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f3f3f3;
+    height: 350px;
+}
+
+.master-chefs{
+    height: 250px;
+    width: 23%;
+    background-color: white;
+    padding: 20px 0px 15px ;
+    margin-top: 33px;
+    transition: 1s;   /*box ko hover krne ke liye */
+}
+
+.qualityfood{
+    height: 250px;
+    width: 23%;
+    background-color: white;
+    padding: 20px 0px 15px ;
+    margin-top: 33px;
+    transition: 1s;   /*box ko hover krne ke liye */
+}
+
+.onlineorder{
+    height: 250px;
+    width: 23%;
+    background-color: white;
+    padding: 20px 0px 15px ;
+    margin-top: 33px;
+    transition: 1s;   /*box ko hover krne ke liye */
+}
+
+.sevices{
+    height: 250px;
+    width: 23%;
+    background-color: white;
+    padding: 20px 0px 15px ;
+    margin-top: 33px;
+    transition: 1s;   /*box ko hover krne ke liye */
+}
+
+.ho:hover{
+    transform: scale(1.1);
+    background: #FEA116;
+    
+}
+
+@media(max-width:840px){
+    .detail{
+        flex-wrap: wrap;
+        height: 470px;
+    }
+    .master-chefs{
+        width: 40%;
+        height: 150px;
+        margin-left: 1%;
+    }
+    .qualityfood{
+        width: 40%;
+        height: 150px;
+        margin-right: 1%;
+    }
+    .onlineorder{
+        width: 40%;
+        height: 150px;
+        margin-left: 1%;
+        margin-top: 1px;
+    }
+    .sevices{
+        width: 40%;
+        height: 150px;
+        margin-right: 1%;
+        margin-top: 1px;
+    }
+}
+
+/* new panel for photo*/
+/* main photo div */
+.main-photo-div{
+    width: 100%;
+    height: 700px;
+    display: flex;
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+/* main-photo-div1 */
+.main-photo-div1{
+    width: 50%;
+    height: 700px;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) / -2);
+    margin-left: calc(var(--bs-gutter-x) / -2);;
+}
+
+
+*, *::before, *::after {
+    /* box-sizing: border-box; */
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+
+/* photo1 */
+.photo1{
+    height: 350px;
+    width: 50%;
+    
+}
+/* photo2 */
+.photo2{
+    height: 350px;
+    width: 50%;
+    
+}
+/* .photo3 */
+.photo3{
+    height: 350px;
+    width: 50%;
+    
+}
+/* .photo4 */
+.photo4{
+    height: 350px;
+    width: 50%;
+   
+}
+
+/* kk photo */
+.kkphoto{
+    margin-top: 20px;
+    margin-left: 50px;
+    height: 300px;
+    width: 80%;
+  
+    background-image: url(a.jpg);
+    background-size: cover;
+    transition: 1s;   /*box ko hover krne ke liye */
+}
+.behungerydiv{
+    margin-top: 120px;
+    height: 200px;
+    width: 60%;
+    margin-left: 30px;
+    background-image: url(back.jpg);
+    background-size: cover;
+    transition: 1s;   /*box ko hover krne ke liye */
+}
+
+
+.cfcdiv{
+    height: 200px;
+    width: 60%;
+    margin-left: 140px;
+    margin-bottom: 120px;
+    background-image: url(d.jpg);
+    background-size: cover;
+    margin-top: 26px;
+    transition: 1s;   /*box ko hover krne ke liye */
+    
+}
+
+.indiandiv{
+    margin-top: 20px;
+    margin-left: 30px;
+    height: 300px;
+    width: 80%;
+    background-image: url(Chola_bhatura.jpg);
+    background-size: cover;
+    transition: 1s;   /*box ko hover krne ke liye */
+}
+
+
+.phtohover:hover{
+    transform: scale(1.1);
+    
+}
+
+/* main-photo-div2 */
+.main-photo-div2{
+    width: 50%;
+    height: 700px;
+}
+
+.text{
+    margin-top: 160px;
+    margin-left: 90px;
+    font-size: 50px;
+}
+
+
+.text1{
+    margin-left: 90px;
+    margin-top: 50px;
+}
+
+/* button for read more */
+#readmore{
+    margin-left: 90px;
+    margin-top: 150px;
+    cursor: pointer;
+    background-color: #FEA116;
+    color: white;
+    width: 150px;
+    border: 1px white;
+    text-align: center;
+    height: 60px;
+
+}
+
+@media(max-width:1127px){
+    .main-photo-div{
+       height: 1300px;
+       flex-wrap: wrap;
+
+    }
+    .main-photo-div1{
+        width: 100%;
+    }
+    .photo1{
+        height: 270px;
+        width: 50%;
+
+    }
+    .photo2{
+        height: 270px;
+        width: 50%;
+    }
+    .photo3{
+        height: 270px;
+        width: 50%;
+        margin-bottom: 159px;
+    }
+    .photo4{
+        height: 270px;
+        width: 50%;
+    }
+    .kkphoto{
+        height: 235px;
+
+
+    }
+    .behungerydiv{
+        margin-top: 55px;
+    margin-left: 19px;
+
+    }
+    .cfcdiv{
+        margin-left: 116px;
+        margin-top: 18.5px;
+
+    }
+    .indiandiv{
+        height: 235px;
+        margin-top: 16px;
+    margin-left: 16px;
+
+    }
+}
+
+
+@media(max-width:1127px){
+    .main-photo-div2{
+        width: 100%;
+        padding-left: 25px;
+        padding-right: 25px;
+       
+    }
+    .text{
+        text-align: center;
+        font-size: 50px;
+        margin-top: 10px;
+        margin-left: 1px;
+    
+    }
+    .text1{
+        text-align: center;
+    margin-left: 52px;
+    margin-right: 52px;
+    }
+    .btn{
+        margin-left: 20px;
+    }
+}
+
+
+/* footer */
+
+footer{
+    height: 400px;
+    width: 100%;
+    background-color: rgb(12, 12, 66);
+}
+
+

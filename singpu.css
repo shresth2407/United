@@ -1,0 +1,141 @@
+.image{
+    height: 100%;
+    width: 100%;
+    background-image: url(pexels-giota-sakellariou-4050525.jpg);
+    background-size: cover;
+    
+}
+
+/* for nav-bar*/
+.nav-bar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;  /* sb ko center me kre ke liye*/
+    justify-content: space-evenly;
+   
+}
+
+.a:hover{
+    color: white;
+}
+
+.underlinereove{
+    text-decoration: none;
+}
+/*for logo*/
+.logo-div{
+    height: 100px;
+    width: 200px;
+}
+
+
+.logo{
+   color: black;
+   font-size: 40px;
+   font-weight: bold;
+}
+
+/* for home */
+
+.home-div{
+    height: 50px;
+    width: 100px; 
+    
+}
+.home{
+    color: black;
+   font-size: 15px;
+   font-weight: bold;
+  
+}
+/*about*/
+.about-div{
+    height: 50px;
+    width: 100px;
+
+}
+.about{
+    color: black;
+   font-size: 15px;
+   font-weight: bold;
+}
+
+/* for contact*/
+.contact-div{
+    height: 50px;
+    width: 100px;
+}
+.contact{
+    color: black;
+   font-size: 15px;
+   font-weight: bold;
+}
+
+/* for help*/
+.help-div{
+    height: 50px;
+    width: 100px;
+}
+.help{
+    color: black;
+   font-size: 15px;
+   font-weight: bold;
+}
+
+
+.sigup{
+    width: 360px;
+    height: 800px;
+    margin: auto;
+    background-color: wheat;
+    border-radius: 3px;
+
+}
+
+h1{
+    text-align: center;
+}
+h4{
+    text-align: center;
+    padding-top: 15px;
+}
+form{
+    width: 300px;
+    margin-left: 20px
+}
+form label{
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+}
+form input{
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+}
+
+input[type="submit"]{
+    width: 560px;
+    height: 650px;
+    margin-top: 20px;
+    border: none;
+    background-color: #ff7200;
+    color: wheat;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    color: white;
+    background: rgb(13 , 211, 247);
+}
+
+p{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+}

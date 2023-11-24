@@ -1,0 +1,911 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(43, 41, 41);
+    
+}
+
+label.logo{
+    font-size: 25px;
+    color: #FEA116;
+    margin: 0 100px;
+    line-height:60px ;
+}
+
+nav ul {
+    float: right;   /* sare list right ke taraf a jae ge */
+    list-style-type: none; /* list ke time jo dought ate h usko hta deta h*/
+    justify-content: space-evenly;
+}
+
+nav ul li{
+    display: inline-block; /* sare elemnet ek line pe a  jae ge*/
+    line-height: 60px;  /* de de ne se sb  center pe a jae ga */
+}
+
+nav ul li a {
+    text-decoration: none; /* remove  underline*/
+    color: #FEA116;
+    font-size: 20px;
+    text-transform: capitalize; /* capitalater me krne ke liye first word*/
+    padding: 8px 20px; /*sare elemnet me space dene ke liye eqaliy*/
+    
+}
+
+.active{
+    font-size: 15px;
+}
+.active:hover{
+    color: rgb(255, 255, 255); 
+
+}
+/*check box*/
+#checkbtn{
+    float: right; /* sare list right ke taraf a jae ge */
+    line-height: 60px;
+    margin-right: 10px;
+    font-size: 23px;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+/* check box ke check kren pe jo bhi ul h left se 0 ho jae ga mtlb ki check pe click krne se vo vapsa apne posyion pe a jae ga  */
+
+#check:checked ~ ul {
+    left: 0;
+
+}
+
+
+
+/* for making logo responsive*/
+
+@media(max-width: 347px){
+    label.logo{
+        font-size: 20px;
+        margin: 0px 50px;
+    }
+}
+
+/* for making responsive*/
+
+@media(max-width:916px){
+
+    label.logo{
+        margin: 0px 60px;
+    }
+    
+    #checkbtn{
+        display: block; /*yaha pe hm maximum de diye h ki itne pe ane ke baad hmara jo check box h vo show hone lge 916px ke baad*/
+
+    }
+    nav ul{
+        width: 100%;
+        height: 100vh; /* vh ka mtlb jitna hmko dikha raha h screen pura cover kre ga vo */
+        background: rgb(233, 213, 175);
+        position: fixed;
+        top: 60px;
+        left: -100%;  /* pura gyab ho jae ga jb hm check pe click kre  ge to  a jae ga*/
+        transition: .5s; /* slid krta huva side se aega*/
+
+        
+    }
+    nav ul li{
+        display: block; /*sare elemen t ko ek ke upar ek kr deta h */
+        text-align: center; /* sare elemnet ko center pe la deta h*/
+        line-height: 35px;
+        margin: 10px;
+
+    }    
+
+}
+
+/* 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* image of resturent  */
+
+.imageunited{
+    width: 100%;
+    height: 850px;
+    background-image: url(back.jpg);
+    background-size: cover;
+    padding-top: 60px;
+    
+}
+
+@media(max-width:916px){
+    .imageunited{
+        background-size: 700px;
+        width: 100%;
+       height: 700px;
+       background-size: cover;
+    }
+    .welcome1{
+        text-align: center;
+        font-size: 10px;
+        
+    }
+}
+
+
+
+/* welcome */
+.welcom{
+    text-align: center;
+    color: black;
+}
+
+/* welcome1 */
+.welcome1{
+    text-align: center;
+    color: #000000;
+}
+
+/* all resturent's photo  section */
+
+
+.resturentphoto{
+    padding-top: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* kk div */
+.kkdiv{
+    width: 20%;
+    height: 500px;
+    background-color:black;
+    margin-left: 35px;
+    padding: 10px 10px 10px;
+   
+}
+
+/* KK image*/
+.box-image1{
+    height: 450px;
+    background-image: url(kk.jpg);
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+/* behungrey div */
+.behungrey{
+    width: 20%;
+    height: 500px;
+    background-color:black;
+    padding: 10px 10px 10px;
+
+}
+/* be hungery image*/
+.box-image2{
+    height: 450px;
+    background-image: url(cfc.jpg);
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem
+}
+
+
+/* cfcdiv */
+.cfcdiv{
+
+    width: 20%;
+    height: 500px;
+    background-color: black;
+    padding: 10px 10px 10px;
+}
+
+/* cfc image */
+.box-image3{
+    height: 450px;
+    background-image: url(beh.jpg);
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem
+}
+
+/* indiandiv */
+.indiandiv{
+    width: 20%;
+    height: 500px;
+    background-color:black;
+    margin-right: 35px;
+    padding: 10px 10px 10px;
+}
+
+/* indian image */
+.box-image4{
+    height: 450px;
+    background-image: url(ind.jpg);
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem
+}
+
+@media(max-width:916px){
+    .resturentphoto{
+
+        width: 100%;
+    flex-wrap: wrap;
+    }
+    .kkdiv{
+        height: 200px;
+        width: 200px;
+        margin-left: 40px;
+    }
+    .behungrey{
+        height: 200px;
+        width: 200px;
+        margin-right: 40px;
+    }
+    .cfcdiv{
+        height: 200px;
+        width: 200px;
+        margin-top: 40px;
+        margin-left: 40px;
+    }
+    .indiandiv{
+
+        height: 200px;
+    width: 200px;
+    margin-right: 40px;
+    margin-top: 40px;
+    }
+    .box-image1{
+        height: 150px;
+        width: 199px;
+    }
+    .box-image2{
+        height: 150px;
+        width: 199px;
+    }
+    .box-image3{
+        height: 150px;
+        width: 199px;
+    }
+    .box-image4{
+        height: 150px;
+        width: 199px;
+    }
+}
+
+/* agrain make responsive*/
+
+@media(max-width:551px){
+    .resturentphoto{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .kkdiv{
+        height: 150px;
+        width: 150px;
+        margin-left: 1px;
+    }
+    .behungrey{
+        height: 150px;
+        width: 150px;
+        margin-right: 1px;
+    }
+    .cfcdiv{
+        height: 150px;
+        width: 150px;
+        margin-left: 1px;
+    }
+    .indiandiv{
+        height: 150px;
+        width: 150px;
+        margin-right: 1px;
+    }
+    .box-image1{
+        height: 100px;
+        width: 149px;
+    }
+    .box-image2{
+        height: 100px;
+        width: 149px;
+    }
+    .box-image3{
+        height: 100px;
+        width: 149px;
+    }
+    .box-image4{
+        height: 100px;
+        width: 149px;
+    }
+}
+
+
+/*----------------------------------------------------------------------*/
+/* menu section                                                                                    menu section  */
+/*menu hading*/
+.menu{
+    margin-top: 20px;
+
+}
+
+
+
+
+/*only  veg item details div */
+.itemdetails{
+width: 100%;
+height: 550px;
+padding-top: 40px;
+
+}
+
+
+
+/* hading of veg item  */
+
+.veg_item{
+    text-align: center;
+    font-size: 40px;
+    color: #FEA116;
+}
+
+@media(max-width:1100px){
+    .veg_item{
+        text-align: center;
+        font-size: 30px;
+    }
+}
+
+
+/* veg section  start  */
+.veg{
+    width: 92.5%;
+    height: 480px;
+    margin-left: 4%;
+    padding-top: 40px;
+    justify-content: space-evenly;
+}
+
+/* 
+--------------------------                         ------------------------------- div 1 veg ----------------------------------------- */
+/* veg section  div  */
+.div1{
+    height: 110px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 18px;
+}
+
+
+/* veg item */
+.item22{
+    width: 31%;
+    height: 90px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.imagediv1{
+    height: 90%;
+    width: 120px;
+    background-image: url(m.jpg);
+    background-size: cover;
+}
+
+/* veg item */
+.item23{
+    width: 31%;
+    height: 90px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.imagediv2{
+    height: 90%;
+    width: 120px;
+    background-image: url(o.jpg);
+    background-size: cover;
+}
+
+/* veg item */
+.item24{
+    width: 31%;
+    height: 90px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.imagediv3{
+    height: 90%;
+    width: 120px;
+    background-image: url(p.jpg);
+    background-size: cover;
+}
+
+
+
+
+/* veg section  div  */                                                       /* div 2 veg  */
+.div2{
+    height: 110px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 18px;
+  
+}
+
+/* veg item */
+.item25{
+    width: 31%;
+    height: 90px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.imagediv4{
+    height: 90%;
+    width: 120px;
+    background-image: url(q.jpg);
+    background-size: cover;
+}
+
+/* veg item */
+.item26{
+    width: 31%;
+    height: 90px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.imagediv5{
+    height: 90%;
+    width: 120px;
+    background-image: url(r.jpg);
+    background-size: cover;
+}
+
+/* veg item */
+.item27{
+    width: 31%;
+    height: 90px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.imagediv6{
+    height: 90%;
+    width: 120px;
+    background-image: url(s.jpg);
+    background-size: cover;
+}
+
+
+
+
+
+/* veg section  div  */                                                       /* div 3 for veg */
+.div3{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 18px;
+    
+}
+
+/* veg item */
+.item28{
+    width: 31%;
+    height: 90px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.imagediv7{
+    height: 90%;
+    width: 120px;
+    background-image: url(Chola_bhatura.jpg);
+    background-size: cover;
+}
+
+/* veg item */
+.item29{
+    width: 31%;
+    height: 90px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.imagediv8{
+    height: 90%;
+    width: 120px;
+    background-image: url(t.jpg);
+    background-size: cover;
+}
+
+/* veg item */
+.item30{
+    width: 31%;
+    height: 90px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.imagediv9{
+    height: 90%;
+    width: 120px;
+    background-image: url(u.jpg);
+    background-size: cover;
+}
+
+
+
+
+
+/* veg section  div  */                                    /* div 4 for veg */
+.div4{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 18px;
+    
+}
+
+
+/* veg item */
+.item31{
+    width: 31%;
+    height: 90px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+    .imagediv10{
+        height: 90%;
+        width: 120px;
+        background-image: url(v.jpg);
+    background-size: cover;
+    }
+    
+    
+/* veg item */
+.item32{
+    width: 31%;
+    height: 90px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagediv11{
+    height: 90%;
+    width: 120px;
+    background-image: url(x.jpg);
+    background-size: cover;
+}
+
+
+/* veg item */
+.item33{
+    width: 31%;
+    height: 90px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.imagediv12{
+    height: 90%;
+    width: 120px;
+    background-image: url(y.jpg);
+    background-size: cover;
+}
+
+
+    
+
+
+@media(max-width:1100px){
+    .itemdetails{
+        height: 1240px;
+    }
+    .veg{
+        height: 1153px;
+    }
+    .div1{
+        height: 270px;
+        width: auto;
+        padding-left: 60px;
+        display: block;
+    }.item22{
+        width: 90%;
+        height: 90px;
+        justify-content: center;
+        margin-left: 0px;
+    }
+    .item23{
+        width: 90%;
+        height: 90px;
+        justify-content: center;
+        
+        margin-left: 0px;
+    }
+    .item24{
+        width: 90%;
+        height: 90px;
+        justify-content: center;
+        margin-left: 0px;
+    }
+    .div2{
+        height: 270px;
+        width: auto;
+        padding-left: 60px;
+        display: block;
+    }
+    .item25{
+       width: 90%;
+        height: 90px;
+        justify-content: center;
+        margin-left: 0px;
+        margin-top: -18px;
+    }
+    .item26{
+           width: 90%;
+           height: 90px;
+           justify-content: center;
+           margin-left: 0px;
+    }
+    .item27{
+        width: 90%;
+        height: 90px;
+        justify-content: center;
+        margin-left: 0px;
+
+    }
+    .div3{
+        height: 270px;
+        width: auto;
+        padding-left: 60px;
+        display: block;
+    }
+    .item28{
+        width: 90%;
+        height: 90px;
+        justify-content: center;
+        margin-left: 0px;
+        margin-top: -36px;
+    }
+    .item29{
+        width: 90%;
+        height: 90px;
+        justify-content: center;
+        margin-left: 0px;
+    }
+    .item30{
+        width: 90%;
+           height: 90px;
+           justify-content: center;
+           margin-left: 0px;
+        
+    }
+    .div4{
+        height: 270px;
+        width: auto;
+        padding-left: 60px;
+        display: block;
+    }
+    .item31{
+        width: 90%;
+        height: 90px;
+        justify-content: center;
+        margin-left: 0px;
+        margin-top: -54px;
+    }
+    .item32{
+        width: 90%;
+        height: 90px;
+        justify-content: center;
+        margin-left: 0px;
+    }
+    .item33{
+        width: 90%;
+        height: 90px;
+        justify-content: center;
+        margin-left: 0px;
+
+    }
+}
+
+
+/* 
+-------------------------------------------------------------------------------- non veg section ------------------------------------------------------------------ */
+/* itemdetail2 */
+.itemdetail2{
+    width: 100%;
+height: 580px;
+padding-top: 40px;
+}
+
+/* 
+hading section  */
+
+.nonveg_item{
+    text-align: center;
+    font-size: 40px;
+    color: #FEA116;
+}
+
+@media(max-width:1100px){
+    .nonveg_item{
+        text-align: center;
+        font-size: 30px;
+    }
+}
+
+/* non veg section */
+
+.nonveg{
+    width: 92.5%;
+    height: 480px;
+    margin-left: 4%;
+    padding-top: 40px;
+    justify-content: space-evenly;
+}
+
+/* non veg section  div 5 */
+
+.div5{
+    height: 110px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 18px;
+}
+
+
+
+.div6{
+    height: 110px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 18px;
+  
+}
+
+
+
+.div7{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 18px;
+    
+}
+
+
+
+.div8{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 18px;
+    
+}
+
+
+/* non veg item */
+.a{
+    width: 31%;
+    height: 90px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* name of all food section  */
+.name1{
+    height: 90%;
+    width: 300px;
+    padding-left: 5px;
+}
+
+/* image of all food section */
+
+.imagedivnonveg{
+    height: 90%;
+    width: 120px;
+    background-size: cover;
+   
+}
+
+
+
+
+
+@media(max-width:1100px){
+    .itemdetail2{
+        height: 1240px;
+    }
+    .nonveg{
+        height: 1153px;
+    }
+    .div5{
+        height: 270px;
+        width: auto;
+        padding-left: 60px;
+        display: block;
+    }
+    .div6{
+        height: 270px;
+        width: auto;
+        padding-left: 60px;
+        display: block;
+    }
+    .div7{
+        height: 270px;
+        width: auto;
+        padding-left: 60px;
+        display: block;
+    }
+    .div8{
+        height: 270px;
+        width: auto;
+        padding-left: 60px;
+        display: block;
+    }
+    .a{
+        width: 90%;
+        height: 90px;
+        justify-content: center;
+        margin-left: 0px;
+    }
+    .b{
+        margin-top: -18px;
+    }
+    .c{
+        margin-top: -36px;
+    }
+    .d{
+        margin-top: -54px;
+    }
+}
+
+
+
+
+
+
+.disname{
+    margin-bottom: 8.5px;
+}
+.name{
+    margin-top: 8px;
+}
+
+.price{
+    width: 100px;
+    height: 90%;
+}
+
+@media(max-width:478px){
+
+    .name{
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    .disname{
+        font-size: 18px;
+    }
+}
+
+
+
+
+/*------------------------------------------copy write ---------------------------------------*/
+
+footer{
+    height: 400px;
+    width: 100%;
+    background-color: rgb(12, 12, 66);
+}
